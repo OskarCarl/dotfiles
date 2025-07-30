@@ -1,0 +1,7 @@
+[Layout]
+DisplayNames=osk,
+LayoutList=oskars_layout,de
+Model=pc105
+ResetOldOptions=true
+Use=true
+VariantList=,

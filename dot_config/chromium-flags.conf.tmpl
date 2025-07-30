@@ -1,0 +1,4 @@
+--password-store=detect
+{{- if eq .chezmoi.hostname "panda" "minifennec" }}
+--device-scale-factor=1.1
+{{- end }}

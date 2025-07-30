@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=broot
+Comment=Launches the broot file manager
+Icon=broot
+Terminal=true
+Exec=/usr/bin/broot
+Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;

@@ -1,0 +1,57 @@
+set default-bg                  "#282828"
+set default-fg                  "#ebdbb2"
+
+set statusbar-fg                "#ebdbb2"
+set statusbar-bg                "#282828"
+
+set inputbar-bg                 "#282828"
+set inputbar-fg                 "#ebdbb2"
+
+set notification-error-bg       "#657056"
+set notification-error-fg       "#282828"
+
+set notification-warning-bg     "#4f473a"
+set notification-warning-fg     "#282828"
+
+set highlight-color             "#282828"
+set highlight-active-color      "#ebdbb2"
+
+set completion-highlight-fg     "#282828"
+set completion-highlight-bg     "#458588"
+
+set completion-bg               "#282828"
+set completion-fg               "#ebdbb2"
+
+set notification-bg             "#282828"
+set notification-fg             "#4c544f"
+
+set recolor-lightcolor          "#282828"
+set recolor-darkcolor           "#ebdbb2"
+set recolor                     "false"
+
+set guioptions sh
+
+# synctex
+set synctex-editor-command "code -r -g %{input}:%{line}"
+
+# copy-pasting
+set selection-clipboard "clipboard"
+
+# scrolling
+set scroll-step 20
+set scroll-page-aware true
+
+# status bar
+set statusbar-home-tilde true
+
+# keybindings
+map a adjust_window best-fit
+map s adjust_window width
+map f follow
+map <Tab> toggle_index
+map j scroll half-down
+map k scroll half-up
+map <C-j> scroll down
+map <C-k> scroll up
+map h navigate previous
+map l navigate next

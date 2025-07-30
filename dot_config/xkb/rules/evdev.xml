@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>oskars_layout</name>
+        <shortDescription>us-osk</shortDescription>
+        <description>Oskar's Layout (English US, intl. with German umlaut and multiply)</description>
+      </configItem>
+      <variantList>
+      </variantList>
+    </layout>
+  </layoutList>
+  <optionList>
+  </optionList>
+</xkbConfigRegistry>

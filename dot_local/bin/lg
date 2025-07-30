@@ -1,0 +1,12 @@
+#!/bin/sh
+
+f="${1:-$(pwd)}"
+while [[ ! -d "$f/.git/" ]]; do
+	f=$(dirname $f)
+	if [[ "$f" == "/" ]]; then
+		printf "Not a git directory!"
+		exit 1
+	fi
+done
+exec lazygit -p $f
+

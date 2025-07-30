@@ -1,0 +1,7 @@
+arch = [
+	"intel-gpu-tools",
+	"intel-media-driver",
+	"lib32-vulkan-intel",
+	"libva-intel-driver",
+	"vulkan-intel",
+]

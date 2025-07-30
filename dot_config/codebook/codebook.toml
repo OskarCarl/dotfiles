@@ -1,0 +1,4 @@
+dictionaries = ["en_us", "en_gb"]
+flag_words = ["todo", "fixme"]
+ignore_paths = ["target/**/*", "**/*.json", ".git/**/*"]
+words = ["nextcloud", "ansible", "fileserver"]

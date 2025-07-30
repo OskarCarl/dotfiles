@@ -1,0 +1,4 @@
+arch = [
+	"intel-ucode",
+	"intel-undervolt",
+]

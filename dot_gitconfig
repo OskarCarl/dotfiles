@@ -1,0 +1,19 @@
+[user]
+	email = oskar.carl@uni-due.de
+	name = Oskar Carl
+	signkey = D9EF5D1DFBD9F923603830994F75BD515F8BF7E0
+[core]
+	editor = nvim
+[pull]
+	rebase = true
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

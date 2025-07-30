@@ -1,0 +1,4 @@
+arch = [
+	"nbfc-git",
+	"tuned-ppd"
+]

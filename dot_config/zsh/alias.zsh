@@ -1,0 +1,6 @@
+alias ls="exa"
+alias less="nvimpager"
+alias rename="perl-rename"
+alias vim="nvim"
+alias sudo="doas"
+alias code="code-oss --ozone-platform-hint=auto --unity-launch"

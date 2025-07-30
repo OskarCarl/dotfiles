@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=lazygit -p /home/oskar/.dotfiles
+Icon=git-gui
+Terminal=false
+Type=Application
+Name=LazyGit
+StartupNotify=true

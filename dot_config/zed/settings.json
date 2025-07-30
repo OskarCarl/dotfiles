@@ -1,0 +1,178 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+	"show_edit_predictions": true,
+	"edit_predictions": {
+		"mode": "subtle",
+		"disabled_globs": [".env", "*.tex", "~/.config/*"]
+	},
+	"features": {
+		"edit_prediction_provider": "zed"
+	},
+	"vim_mode": true,
+	"hard_tabs": true,
+	"tab_size": 4,
+	"soft_wrap": "editor_width",
+	"ui_font_size": 17,
+	"active_pane_modifiers": {
+		"inactive_opacity": 0.8
+	},
+	"buffer_font_size": 16.0,
+	"buffer_font_family": "JetBrainsMono Nerd Font",
+	"theme": {
+		"mode": "system",
+		"light": "Catppuccin Frappé (Blur)",
+		"dark": "Catppuccin Mocha (Blur)"
+	},
+	"icon_theme": "Catppuccin Mocha",
+	"show_whitespaces": "boundary",
+	"collaboration_panel": {
+		"button": false
+	},
+	"chat_panel": {
+		"button": "never"
+	},
+	"notification_panel": {
+		"button": false
+	},
+	"agent": {
+		"default_profile": "write",
+		"inline_assistant_model": {
+			"provider": "zed.dev",
+			"model": "claude-sonnet-4"
+		},
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-sonnet-4"
+		},
+		"enabled": true,
+		"button": true
+	},
+	"tabs": {
+		"git_status": true
+	},
+	"terminal": {
+		"shell": {
+			"program": "fish"
+		},
+		"detect_venv": {
+			"on": {
+				"directories": [".env", "env", ".venv", "venv"],
+				"activate_script": "fish"
+			}
+		}
+	},
+	"auto_install_extensions": {
+		"catppuccin-blur": true,
+		"catppuccin-icons": true,
+		"codebook": true,
+		"docker-compose": true,
+		"dockerfile": true,
+		"ini": true,
+		"latex": true,
+		"log": true,
+		"make": true
+	},
+	"languages": {
+		"Python": {
+			"hard_tabs": false,
+			"tab_size": 4,
+			"formatter": "language_server",
+			"format_on_save": "on"
+		},
+		"Ansible": {
+			"tab_size": 2,
+			"hard_tabs": false
+		},
+		"YAML": {
+			"tab_size": 2,
+			"hard_tabs": false
+		},
+		"Mermaid": {
+			"hard_tabs": false
+		}
+	},
+	"file_types": {
+		"Ansible": [
+			"**.ansible.yml",
+			"**/meta/*.yml",
+			"**/tasks/*.yml",
+			"**/handlers/*.yml",
+			"**/group_vars/*.yml",
+			"**/playbooks/*.yml",
+			"**playbook*.yml"
+		],
+		"C": ["**.c", "**.h", "**.cc", "**.hh", "**.C", "**.H", "**.ino"],
+		"HTML": ["**.html", "**.ejs"],
+		"Dockerfile": ["Dockerfile", "**.dockerfile"],
+		"Caddyfile": ["[Cc]addyfile", "[Cc]addyfile.*"],
+		"Docker Compose": [
+			"docker-compose.yml",
+			"docker-compose.**.yml",
+			"docker-compose.yaml",
+			"docker-compose.**.yaml"
+		]
+	},
+	"lsp": {
+		"harper-ls": {
+			"binary": {
+				"path": "/usr/bin/harper-ls",
+				"arguments": ["--stdio"],
+				"ignore_system_version": false
+			}
+		},
+		"texlab": {
+			"settings": {
+				"texlab": {
+					"build": {
+						"executable": "tectonic",
+						"args": [
+							"-X",
+							"compile",
+							"%f",
+							"--untrusted",
+							"--synctex",
+							"--keep-logs",
+							"--keep-intermediates"
+						],
+						"onSave": true,
+						"forwardSearchAfter": true
+					},
+					"forwardSearch": {
+						"executable": "okular",
+						"args": ["--unique", "%p#src:%l%f"]
+					},
+					"diagnostics": {
+						"ignoredPatterns": ["(Over|Under)full \\\\hbox.*"]
+					}
+				}
+			}
+		},
+		"ansible-language-server": {
+			"settings": {
+				"ansible": {
+					"path": "ansible"
+				},
+				"executionEnvironment": {
+					"enabled": false
+				},
+				"python": {
+					"interpreterPath": "python3"
+				},
+				"validation": {
+					"enabled": true,
+					"lint": {
+						"enabled": true,
+						"path": "ansible-lint"
+					}
+				}
+			}
+		}
+	}
+}

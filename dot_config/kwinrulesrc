@@ -1,0 +1,43 @@
+[5737318a-21cd-4623-b6c3-f061dc0dd958]
+Description=Cider
+desktops=\\0
+desktopsrule=3
+noborder=true
+noborderrule=3
+wmclass=Cider
+wmclassmatch=1
+
+[81542e8d-e579-475d-baa0-76ff9278e171]
+Description=Pomodoro (Francis)
+desktops=\\0
+desktopsrule=3
+wmclass=org.kde.francis
+wmclassmatch=1
+
+[General]
+count=5
+rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171
+
+[bb002edd-8472-4a66-a7ed-4f0eb94b4765]
+Description=Application settings for pritunl
+layer=above
+layerrule=2
+title=Pritunl Client
+titlematch=1
+types=1
+wmclass=pritunl
+wmclasscomplete=true
+wmclassmatch=2
+
+[c268356a-cd7a-490e-8240-1402cf485035]
+Description=Ignore all minsize
+minsizerule=2
+types=1
+
+[ca98e5e6-69f8-4261-b3cb-c395070dab50]
+Description=Zotero BetterBibTeX Picker
+noborder=true
+noborderrule=2
+title=Quick Format Citation
+wmclass=Zotero
+wmclassmatch=1

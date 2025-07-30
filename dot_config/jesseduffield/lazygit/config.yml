@@ -1,0 +1,5 @@
+reporting: "on"
+startuppopupversion: 1
+update:
+  method: never # can be: prompt | background | never
+  days: 14 # how often an update is checked for

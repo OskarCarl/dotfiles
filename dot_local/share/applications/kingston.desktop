@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Open USB Key
+Comment=Unlocks and opens the encrypted USB drive
+Icon=stock_keyring
+Terminal=false
+Exec=/usr/bin/alacritty -e /home/oskar/.scripts/open_key_disk.sh explorer
+Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;

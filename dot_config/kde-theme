@@ -1,0 +1,8 @@
+# vim: ft=sh
+# This file is sourced by the auto-knight script for automatic theme switching.
+
+LIGHT_THEME="org.kde.breeze.desktop"
+DARK_THEME="org.kde.breezedark.desktop"
+CHANGE_THEME_COMMAND="plasma-apply-lookandfeel -a"
+
+

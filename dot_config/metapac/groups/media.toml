@@ -1,0 +1,30 @@
+arch = [
+	"audacity",
+	"cdrtools",
+	"cider",
+	"cuetools",
+	"gimp",
+	"gst-libav",
+	"gst-plugins-bad",
+	"gst-plugins-ugly",
+	"gst-python",
+	"handbrake",
+	"inkscape",
+	"kid3-qt",
+	"mediainfo",
+	"mkvtoolnix-cli",
+	"mkvtoolnix-gui",
+	"mpc",
+	"obs-studio",
+	"opencv",
+	"scribus",
+	"shntool",
+	"shotcut",
+	"yt-dlp",
+]
+
+flatpak = [
+	"com.calibre_ebook.calibre",
+	"org.upscayl.Upscayl",
+]
+

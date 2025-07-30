@@ -1,0 +1,13 @@
+arch = [
+	"gamescope",
+	"streamlink-twitch-gui-bin",
+	"unigine-heaven",
+	"wine",
+	"wine-mono",
+	"winetricks",
+]
+
+flatpak = [
+	"com.valvesoftware.Steam",
+	"org.freedesktop.Platform.VulkanLayer.gamescope",
+]

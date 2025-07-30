@@ -1,0 +1,76 @@
+--- stealthFox.css	2021-09-09 20:21:49.336318011 +0200
++++ userChrome.css	2021-09-09 20:29:11.178084507 +0200
+@@ -1,3 +1,14 @@
++/* Tint the Urlbar in private browsing windows */
++:root[privatebrowsingmode="temporary"] {
++	--toolbar-bgcolor: #8d20ae !important;
++	--toolbarbutton-icon-fill: #ffffff !important;
++}
++
++/* Remove border between toolbox and content */
++#navigator-toolbox {
++	border-bottom: none !important;
++}
++
+ /* Hiding Tabs Toolbar */
+ 
+ #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+@@ -15,23 +26,12 @@
+ 
+ /* Moving Windows Control */
+ 
+-/* Adding empty space for buttons */
+-#nav-bar {
+-	margin-right:137px;
+-	margin-left:-3px;
+-}
+-
+ /* 15px for dragging whole window by mouse*/
+ #titlebar {
+ 	appearance: none !important;
+ 	height: 0px;
+ }
+ 
+-/* Fix for main menu calling by Alt button */
+-#titlebar > #toolbar-menubar {
+-	margin-top: 7px;
+-}
+-
+ /* Move minimize/restore/close buttons to empty space */
+ #TabsToolbar > .titlebar-buttonbox-container {
+ 	display: block;
+@@ -141,12 +141,6 @@
+ 
+ /* Hide Buttons and Reveal on Hover Finished*/
+ 
+-#urlbar,#searchbar 
+-{
+-    font-size: 13px !important;
+-	margin-top: 1px !important;
+-}
+-
+ * { scrollbar-width: thin !important; }
+ 
+ findbar{
+@@ -194,13 +188,11 @@
+ 
+ #urlbar-background, #searchbar {
+     border: none !important;
+-    background-color: #28272F !important;
+     animation-name: none !important;
+     box-shadow: none !important;
+ }
+ 
+ #urlbar[breakout][breakout-extend] > #urlbar-background{
+-    background-color: #28272F !important;
+     background-image: var(--lwt-additional-images)!important;
+     background-repeat: var(--lwt-background-tiling)!important;
+     background-position: var(--lwt-background-alignment)!important;
+@@ -212,4 +204,5 @@
+ 
+ #nav-bar:not([tabs-hidden="true"]) {
+     box-shadow: none !important;
+-}
+\ No newline at end of file
++}
++

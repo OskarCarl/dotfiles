@@ -1,0 +1,14 @@
+arch = [
+	"python-eduvpn-client",
+	"pritunl-client-electron",
+	"qemu-desktop",
+	"qemu-emulators-full",
+	"tectonic",
+	"virt-manager",
+	"virtio-win",
+	"zotero-bin",
+]
+
+flatpak = [
+	"us.zoom.Zoom",
+]

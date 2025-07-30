@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Vim Cheatsheet
+Comment=Shows the vim cheatsheet
+Icon=emblem-question
+Terminal=false
+Exec=/usr/bin/alacritty --class alacritty.vim.cheatsheet -t "vim Cheatsheet" -e cheat vim
+Categories=ConsoleOnly;System;

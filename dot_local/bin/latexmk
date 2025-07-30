@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -n "$TTY" ]; then
+	TTY_OPT='-it'
+else
+	TTY_OPT=''
+fi
+line=`echo "$@" | sed "s|$(pwd)/*||g"`
+mkdir -p "$HOME/.cache/latex-docker/"
+
+docker run --read-only --rm --user $UID:$GID --tmpfs /run --tmpfs /tmp $TTY_OPT -v "$HOME/.cache/latex-docker":/.texlive2023:rw -v "$(pwd)":/home:rw -v "$(pwd)":/workdir:rw danteev/texlive `basename $0` $line
+

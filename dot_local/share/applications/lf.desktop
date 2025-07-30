@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=lf
+Comment=Launches the lf file manager
+Icon=system-file-manager
+Terminal=true
+Exec=/usr/bin/lf %U
+Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;

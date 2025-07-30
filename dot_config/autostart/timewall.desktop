@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[en_GB]=Dynamic Wallpaper Daemon
+Comment=Dynamic Wallpaper Daemon
+Exec=/usr/bin/timewall set --daemon
+GenericName[en_GB]=
+GenericName=
+MimeType=
+Name[en_GB]=Timewall
+Name=Timewall
+NoDisplay=true
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+TryExec=/usr/bin/timewall
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

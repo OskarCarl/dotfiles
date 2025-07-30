@@ -1,0 +1,18 @@
+##
+# zsh configuration
+##
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=10000
+export SAVEHIST=1000
+
+# theme
+eval "$(starship init zsh)"
+
+##
+# source additional custom settings
+##
+for config_file in $(/bin/ls $HOME/.config/zsh/*.zsh); do
+    source $config_file
+done
+
+source /home/oskar/.config/broot/launcher/bash/br
