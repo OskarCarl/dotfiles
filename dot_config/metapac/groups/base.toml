@@ -110,7 +110,6 @@ arch = [
 	"pv",
 	"python",
 	"python-distutils-extra",
-	"reflector-pacman-hook-git",
 	"samba",
 	"sane",
 	"sbsigntools",
