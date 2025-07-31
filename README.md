@@ -12,7 +12,9 @@ Packages are managed with [metapac](https://github.com/ripytide/metapac) and [ya
 
 Some files are encrypted, so using this repo directly requires the key.
 
-## Bootstrapping
+## Bootstrapping \[unverified\]
+
+Disclaimer: _I have not tried this (yet), so YMMV_
 
 Install base-devel and chezmoi as root: `pacman -S chezmoi base-devel`.
 Then install yay manually from the [AUR](https://aur.archlinux.org/packages/yay-bin).
