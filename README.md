@@ -19,7 +19,7 @@ Disclaimer: _I have not tried this (yet), so YMMV_
 Install base-devel and chezmoi as root: `pacman -S chezmoi base-devel`.
 Then install yay manually from the [AUR](https://aur.archlinux.org/packages/yay-bin).
 Afterwards you can install the other tools: `yay -S metapac-bin chezmoi_modify_manager`.
-Init chezmoi: `chezmoi init OskarCarl`.
+Init chezmoi: `chezmoi init OskarCarl -S ~/.dotfiles`.
 You'll be asked some questions to set some overall values. You should probably edit the config template (`.chezmoi.yaml.tmpl`) to change encryption and gpg values.
 
 Before you apply the dotfiles you have to remove the `encrypted_*` files from the repo since you're not me and don't have the decryption key.
