@@ -8,6 +8,8 @@ encryption: "age"
 age:
   identity: {{ $keypath }}
   recipient: "age1wz2g5d46xfj4qnxpqas7vsmuypuy0fcn504cmydumxk4jkjtxuasdra9zm"
+edit:
+  watch: true
 merge:
   command: "nvim"
   args: ["-d", "-c", "wincmd l", "-c", "norm ]c", {{ printf "%q" "{{ .Destination }}" }}, {{ printf "%q" "{{ .Source }}" }}, {{ printf "%q" "{{ .Target }}" }}]
