@@ -3,3 +3,6 @@
 --enable-gpu-rasterization
 --ignore-gpu-blocklist
 --enable-zero-copy
+{{- if .mobile }}
+--device-scale-factor=1.1
+{{- end }}

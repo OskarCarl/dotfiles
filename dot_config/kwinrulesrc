@@ -15,8 +15,8 @@ wmclass=org.kde.francis
 wmclassmatch=1
 
 [General]
-count=5
-rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171
+count=6
+rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4
 
 [bb002edd-8472-4a66-a7ed-4f0eb94b4765]
 Description=Application settings for pritunl
@@ -40,4 +40,13 @@ noborder=true
 noborderrule=2
 title=Quick Format Citation
 wmclass=Zotero
+wmclassmatch=1
+
+[eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4]
+Description=Bitwarden Float Krohnkite
+skippager=true
+skippagerrule=2
+title=Extension: (Bitwarden Password Manager)
+titlematch=2
+wmclass=zen
 wmclassmatch=1

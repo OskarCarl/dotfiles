@@ -1,0 +1,15 @@
+# Configuration file for timewall
+
+# Set your geographical location coordinates here
+[location]
+lat = {{ .location.lat }}
+lon = {{ .location.long }}
+
+# Uncomment and adjust the following section to use a custom wallpaper setter command.
+# The example uses `swww`: https://github.com/LGFae/swww.
+# [setter]
+# command = ['swww', 'img', '%f']
+
+# Change how often the wallpaper is updated in daemon mode
+[daemon]
+update_interval_seconds = 300

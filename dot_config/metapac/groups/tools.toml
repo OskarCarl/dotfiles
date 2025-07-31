@@ -33,6 +33,7 @@ arch = [
 	"plocate",
 	"powertop",
 	"python-keyring",
+	"rbw",
 	"rclone",
 	"ripgrep",
 	"rsync",

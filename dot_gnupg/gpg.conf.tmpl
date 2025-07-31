@@ -124,8 +124,8 @@ keyserver-options auto-key-retrieve
 # based mechanisms.
 auto-key-locate local,wkd,pka,dane
 
-default-key  25FB862C4317BCA4
+default-key  {{ .gpgkey }}
 
-encrypt-to  25FB862C4317BCA4
+encrypt-to  {{ .gpgkey }}
 
 keyserver  hkps://keys.openpgp.org

@@ -20,10 +20,14 @@ Install base-devel and chezmoi as root: `pacman -S chezmoi base-devel`.
 Then install yay manually from the [AUR](https://aur.archlinux.org/packages/yay-bin).
 Afterwards you can install the other tools: `yay -S metapac-bin chezmoi_modify_manager`.
 Init chezmoi: `chezmoi init OskarCarl`.
+You'll be asked some questions to set some overall values. You should probably edit the config template (`.chezmoi.yaml.tmpl`) to change encryption and gpg values.
+
 Before you apply the dotfiles you have to remove the `encrypted_*` files from the repo since you're not me and don't have the decryption key.
-To find them: `find ~/.local/share/chezmoi -name 'encrypted_*'`.
+To find them: `find ~/.dotfiles -name 'encrypted_*'`.
+There are also some values which are retrieved from Bitwarden using [rbw](https://github.com/doy/rbw). You can find the files with `grep -s 'rbw' ~/.dotfiles/**/*`.
+
 You should also configure which package groups you wish to install.
-Modify `~/.local/share/chezmoi/dot_config/metapac/config.toml` to include a line for you machines hostname under `[hostname_groups]`.
+Modify `~/.dotfiles/dot_config/metapac/config.toml` to include a line for you machines hostname under `[hostname_groups]`.
 
 Finally you can deploy stuff: `chezmoi apply` and `metapac s`
 

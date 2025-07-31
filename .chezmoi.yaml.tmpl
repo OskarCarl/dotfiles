@@ -1,0 +1,33 @@
+{{ $name := promptStringOnce . "name" "What is your name" -}}
+{{ $email := promptStringOnce . "email" "What is your email address" -}}
+{{ $mobile := promptBoolOnce . "mobile" "Is this a mobile device/laptop" -}}
+{{ $keypath := toString ( joinPath .chezmoi.homeDir ".config/chezmoi/key.txt" ) -}}
+sourceDir: {{ joinPath .chezmoi.homeDir ".dotfiles" }}
+progress: true
+encryption: "age"
+age:
+  identity: {{ $keypath }}
+  recipient: "age1wz2g5d46xfj4qnxpqas7vsmuypuy0fcn504cmydumxk4jkjtxuasdra9zm"
+merge:
+  command: "nvim"
+  args: ["-d", "-c", "wincmd l", "-c", "norm ]c", {{ printf "%q" "{{ .Destination }}" }}, {{ printf "%q" "{{ .Source }}" }}, {{ printf "%q" "{{ .Target }}" }}]
+
+data:
+  name: {{ $name | quote }}
+  email: {{ $email | quote }}
+  mobile: {{ $mobile }}
+  gpgkey: "D9EF5D1DFBD9F923603830994F75BD515F8BF7E0"
+  location:
+{{- if not (hasKey . "location") }}
+    {{- $location := promptString "What is your location (format: 'latitude, longitude')" -}}
+    {{- $loc := splitList "," $location }}
+    lat:  {{ first $loc | trim | float64 }}
+    long: {{ last $loc | trim | float64 }}
+{{- else }}
+    lat:  {{ .location.lat }}
+    long: {{ .location.long }}
+{{ end -}}
+
+{{- if not ( stat $keypath ) -}}
+{{ warnf "You need to place the decryption key in" $keypath -}}
+{{ end }}
