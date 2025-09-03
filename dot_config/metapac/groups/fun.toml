@@ -3,8 +3,6 @@ arch = [
 	"streamlink-twitch-gui-bin",
 	"unigine-heaven",
 	"wine",
-	"wine-mono",
-	"winetricks",
 ]
 
 flatpak = [
