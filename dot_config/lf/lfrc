@@ -37,7 +37,7 @@ map <backspace2> set hidden!
 map i $/usr/bin/pistol $f | nvimpager
 
 # dedicated keys for file opener actions
-map o $[[ ! -d $f ]] && gio open $f || exit 0
+map o $[[ ! -d $f ]] && kde-open $f || exit 0
 map O &alacritty -e /usr/bin/lf $f
 
 cmd open-with &"$@" $fx
