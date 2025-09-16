@@ -110,6 +110,7 @@ arch = [
 	"pv",
 	"python",
 	"python-distutils-extra",
+	"rebuild-detector",
 	"samba",
 	"sane",
 	"sbsigntools",
