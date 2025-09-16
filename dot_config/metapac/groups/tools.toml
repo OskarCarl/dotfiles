@@ -13,7 +13,6 @@ arch = [
 	"eza",
 	"fastfetch",
 	"gawk",
-	"gnu-netcat",
 	"gzip",
 	"harper",
 	"heimdall",

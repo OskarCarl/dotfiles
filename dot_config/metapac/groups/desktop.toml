@@ -49,9 +49,9 @@ arch = [
 	"xorg-xwayland",
 	"zathura",
 	"zathura-pdf-mupdf",
-	"zed",
 	"zen-browser-bin",
 	{ package = "system-config-printer", optional_deps = ["python-pysmbc"] },
+	{ package = "zed", optional_deps = ["openbsd-netcat"] },
 ]
 
 flatpak = [
