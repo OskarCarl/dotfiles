@@ -1,3 +1,16 @@
+[150f037d-e5ba-4226-a77f-7de498607c94]
+Description=Wavebox Sharing Indicator
+desktops=\\0
+desktopsrule=2
+position=0,26
+positionrule=3
+skippager=true
+skippagerrule=2
+title=.* is sharing (a window|your screen)\\.
+titlematch=3
+wmclass=wavebox
+wmclassmatch=1
+
 [5737318a-21cd-4623-b6c3-f061dc0dd958]
 Description=Cider
 desktops=\\0
@@ -7,6 +20,15 @@ noborderrule=3
 wmclass=Cider
 wmclassmatch=1
 
+[667d94f3-c9f3-449c-841f-62f6778455f7]
+Description=Wavebox Apps
+desktops=\\0
+desktopsrule=3
+skippager=true
+skippagerrule=3
+wmclass=wavebox-\\w+
+wmclassmatch=3
+
 [81542e8d-e579-475d-baa0-76ff9278e171]
 Description=Pomodoro (Francis)
 desktops=\\0
@@ -15,8 +37,8 @@ wmclass=org.kde.francis
 wmclassmatch=1
 
 [General]
-count=6
-rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4
+count=8
+rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4,667d94f3-c9f3-449c-841f-62f6778455f7,150f037d-e5ba-4226-a77f-7de498607c94
 
 [bb002edd-8472-4a66-a7ed-4f0eb94b4765]
 Description=Application settings for pritunl
