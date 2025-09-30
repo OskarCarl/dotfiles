@@ -30,6 +30,7 @@ arch = [
 	"qt5ct",
 	"qt6-wayland",
 	"speedcrunch",
+	"system-config-printer", "python-pysmbc", #optional
 	"thunderbird",
 	"timewall-bin",
 	"torbrowser-launcher",
@@ -49,9 +50,8 @@ arch = [
 	"xorg-xwayland",
 	"zathura",
 	"zathura-pdf-mupdf",
+	"zed", "openbsd-netcat", #optional
 	"zen-browser-bin",
-	{ package = "system-config-printer", optional_deps = ["python-pysmbc"] },
-	{ package = "zed", optional_deps = ["openbsd-netcat"] },
 ]
 
 flatpak = [
