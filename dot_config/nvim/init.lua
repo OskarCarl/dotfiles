@@ -14,6 +14,7 @@ vim.o.expandtab = false
 
 -- Theme options
 vim.opt.termguicolors = true
+vim.opt.guicursor = "i:hor10"
 vim.g.gruvbox_italic = true
 vim.o.background = "dark"
 vim.cmd [[
