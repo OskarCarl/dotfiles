@@ -2,7 +2,7 @@
 Description=Wavebox Sharing Indicator
 desktops=\\0
 desktopsrule=2
-position=0,26
+position=8,46
 positionrule=3
 skippager=true
 skippagerrule=2
