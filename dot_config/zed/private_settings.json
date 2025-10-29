@@ -35,9 +35,6 @@
 	"collaboration_panel": {
 		"button": false
 	},
-	"chat_panel": {
-		"button": "never"
-	},
 	"notification_panel": {
 		"button": false
 	},
@@ -48,8 +45,8 @@
 			"model": "claude-sonnet-4"
 		},
 		"default_model": {
-			"provider": "zed.dev",
-			"model": "claude-sonnet-4"
+			"provider": "copilot_chat",
+			"model": "gpt-5-mini"
 		},
 		"enabled": true,
 		"button": true
