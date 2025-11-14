@@ -46,7 +46,7 @@
 		},
 		"default_model": {
 			"provider": "copilot_chat",
-			"model": "gpt-5-mini"
+			"model": "gpt-4o"
 		},
 		"enabled": true,
 		"button": true
@@ -106,7 +106,7 @@
 			"**playbook*.yml"
 		],
 		"C": ["**.c", "**.h", "**.cc", "**.hh", "**.C", "**.H", "**.ino"],
-		"HTML": ["**.html", "**.ejs"],
+		"HTML": ["**.html", "**.html.tmpl", "**.ejs"],
 		"Dockerfile": ["Dockerfile", "**.dockerfile"],
 		"Caddyfile": ["[Cc]addyfile", "[Cc]addyfile.*"],
 		"Docker Compose": [
