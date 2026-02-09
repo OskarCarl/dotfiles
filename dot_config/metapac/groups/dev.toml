@@ -56,6 +56,7 @@ arch = {
 		"python-pip",
 		"python-pylint",
 		"python-pytest",
+		"ruff",
 		"rustup",
 		"scdoc",
 		"source-highlight",
@@ -77,8 +78,8 @@ arch = {
 
 flatpak = {
 	packages = [
-		"io.github.Omniaevo.mqtt5-explorer",
-		"es.danirod.Cartero",
+		"system:io.github.Omniaevo.mqtt5-explorer",
+		"system:es.danirod.Cartero",
 	]
 }
 

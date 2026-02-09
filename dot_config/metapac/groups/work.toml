@@ -13,7 +13,7 @@ arch = {
 
 flatpak = {
 	packages = [
-		"us.zoom.Zoom",
+		"system:us.zoom.Zoom",
 	]
 }
 

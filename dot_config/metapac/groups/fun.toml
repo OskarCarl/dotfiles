@@ -9,8 +9,8 @@ arch = {
 
 flatpak = {
 	packages = [
-		"com.valvesoftware.Steam",
-		"org.freedesktop.Platform.VulkanLayer.gamescope",
+		"system:com.valvesoftware.Steam",
+		"system:org.freedesktop.Platform.VulkanLayer.gamescope",
 	]
 }
 

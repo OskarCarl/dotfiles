@@ -27,8 +27,8 @@ arch = {
 
 flatpak = {
 	packages = [
-		"com.calibre_ebook.calibre",
-		"org.upscayl.Upscayl",
+		"system:com.calibre_ebook.calibre",
+		"system:org.upscayl.Upscayl",
 	]
 }
 

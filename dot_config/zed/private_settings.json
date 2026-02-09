@@ -7,7 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"show_edit_predictions": true,
+	"agent_servers": {
+  "github-copilot": {
+   "type": "registry"
+  }
+ },
+ "show_edit_predictions": true,
 	"edit_predictions": {
 		"mode": "subtle",
 		"disabled_globs": [".env", "*.tex", "~/.config/*"]
@@ -46,7 +51,7 @@
 		},
 		"default_model": {
 			"provider": "copilot_chat",
-			"model": "gpt-4o"
+			"model": "claude-sonnet-4.5"
 		},
 		"enabled": true,
 		"button": true

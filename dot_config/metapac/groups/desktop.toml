@@ -4,6 +4,7 @@ arch = {
 		"brave-bin",
 		"breeze-icons",
 		"cheat-bin",
+		"creality-print-bin",
 		"drawio-desktop",
 		"fprintd",
 		"freecad",
@@ -57,15 +58,15 @@ arch = {
 
 flatpak = {
 	packages = [
-		"com.github.jeromerobert.pdfarranger",
-		"de.bund.ausweisapp.ausweisapp2",
-		"io.missioncenter.MissionCenter",
-		"org.apache.directory.studio",
-		"org.fkoehler.KTailctl",
-		"org.gnome.Maps",
-		"org.kde.CrowTranslate",
-		"org.onlyoffice.desktopeditors",
-		"org.raspberrypi.rpi-imager",
-		"org.signal.Signal",
+		"system:com.github.jeromerobert.pdfarranger",
+		"system:de.bund.ausweisapp.ausweisapp2",
+		"system:io.missioncenter.MissionCenter",
+		"system:org.apache.directory.studio",
+		"system:org.fkoehler.KTailctl",
+		"system:org.gnome.Maps",
+		"system:org.kde.CrowTranslate",
+		"system:org.onlyoffice.desktopeditors",
+		"system:org.raspberrypi.rpi-imager",
+		"system:org.signal.Signal",
 	]
 }
