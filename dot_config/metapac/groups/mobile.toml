@@ -1,4 +1,7 @@
-arch = [
-	"nbfc-git",
-	"tuned-ppd"
-]
+arch = {
+	packages = [
+		"nbfc-git",
+		"tuned-ppd"
+	]
+}
+

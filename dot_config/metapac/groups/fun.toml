@@ -1,11 +1,16 @@
-arch = [
-	"gamescope",
-	"streamlink-twitch-gui-bin",
-	"unigine-heaven",
-	"wine",
-]
+arch = {
+	packages = [
+		"gamescope",
+		"streamlink-twitch-gui-bin",
+		"unigine-heaven",
+		"wine",
+	]
+}
 
-flatpak = [
-	"com.valvesoftware.Steam",
-	"org.freedesktop.Platform.VulkanLayer.gamescope",
-]
+flatpak = {
+	packages = [
+		"com.valvesoftware.Steam",
+		"org.freedesktop.Platform.VulkanLayer.gamescope",
+	]
+}
+

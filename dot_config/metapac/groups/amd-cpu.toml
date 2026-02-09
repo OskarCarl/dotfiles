@@ -1,4 +1,6 @@
-arch = [
-	"amd-ucode",
-	"amdctl-git",
-]
+arch = {
+	packages = [
+		"amd-ucode",
+		"amdctl-git",
+	]
+}

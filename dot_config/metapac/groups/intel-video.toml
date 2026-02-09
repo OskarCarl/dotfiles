@@ -1,6 +1,8 @@
-arch = [
-	"intel-gpu-tools",
-	"intel-media-driver",
-	"libva-intel-driver",
-	"vulkan-intel",
-]
+arch = {
+	packages = [
+		"intel-gpu-tools",
+		"intel-media-driver",
+		"libva-intel-driver",
+		"vulkan-intel",
+	]
+}

@@ -1,4 +1,6 @@
-arch = [
-	"intel-ucode",
-	"intel-undervolt",
-]
+arch = {
+	packages = [
+		"intel-ucode",
+		"intel-undervolt",
+	]
+}

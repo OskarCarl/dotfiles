@@ -1,4 +1,7 @@
-arch = [
-	"openrgb",
-	"stress",
-]
+arch = {
+	packages = [
+		"openrgb",
+		"stress",
+	]
+}
+

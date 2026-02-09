@@ -17,11 +17,6 @@ hostname_groups_enabled = true
 [arch]
 package_manager = "yay"
 
-# Whether to install flatpak packages systemwide or for the current user.
-# Default: true
-[flatpak]
-systemwide = true
-
 # Which group files apply for which hostnames
 # paths starting without a / are relative to the groups folder
 # Default: None
