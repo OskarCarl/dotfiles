@@ -17,6 +17,7 @@ arch = {
 		"cmake",
 		"dbeaver",
 		"delve",
+		"deno",
 		"docker-buildx",
 		"docker-compose",
 		"elfutils",

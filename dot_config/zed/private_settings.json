@@ -97,6 +97,9 @@
 		"Mermaid": {
 			"hard_tabs": false,
 		},
+		"Kotlin": {
+			"language_servers": ["kotlin-language-server"]
+		},
 	},
 	"file_types": {
 		"Ansible": [
