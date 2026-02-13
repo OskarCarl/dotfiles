@@ -97,6 +97,24 @@
 		"Mermaid": {
 			"hard_tabs": false,
 		},
+		"TypeScript": {
+			"language_servers": [
+				"deno",
+				"!typescript-language-server",
+				"!vtsls",
+				"!eslint",
+			],
+			"formatter": "language_server",
+		},
+		"TSX": {
+			"language_servers": [
+				"deno",
+				"!typescript-language-server",
+				"!vtsls",
+				"!eslint",
+			],
+			"formatter": "language_server",
+		},
 		"Kotlin": {
 			"language_servers": ["kotlin-language-server"]
 		},
