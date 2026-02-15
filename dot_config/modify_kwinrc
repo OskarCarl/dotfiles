@@ -3,5 +3,5 @@
 source auto
 
 ignore section "Activities"
-ignore regex "Desktops" "Id_.*"
+ignore section "Desktops"
 ignore regex "Tiling\\]\\[.*" ".*"
