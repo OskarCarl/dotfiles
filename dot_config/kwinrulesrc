@@ -1,5 +1,5 @@
 [150f037d-e5ba-4226-a77f-7de498607c94]
-Description=Wavebox Sharing Indicator
+Description=Chromium Sharing Indicator
 desktops=\\0
 desktopsrule=2
 position=8,46
@@ -8,8 +8,8 @@ skippager=true
 skippagerrule=2
 title=.* is sharing (a window|your screen)\\.
 titlematch=3
-wmclass=wavebox
-wmclassmatch=1
+wmclass=^(wavebox|helium)$
+wmclassmatch=3
 
 [5737318a-21cd-4623-b6c3-f061dc0dd958]
 Description=Cider
@@ -37,8 +37,8 @@ wmclass=org.kde.francis
 wmclassmatch=1
 
 [General]
-count=8
-rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4,667d94f3-c9f3-449c-841f-62f6778455f7,150f037d-e5ba-4226-a77f-7de498607c94
+count=9
+rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4,dc591e0b-5611-41ba-97d7-d5f34506974b,667d94f3-c9f3-449c-841f-62f6778455f7,150f037d-e5ba-4226-a77f-7de498607c94
 
 [bb002edd-8472-4a66-a7ed-4f0eb94b4765]
 Description=Application settings for pritunl
@@ -63,6 +63,15 @@ noborderrule=2
 title=Quick Format Citation
 wmclass=Zotero
 wmclassmatch=1
+
+[dc591e0b-5611-41ba-97d7-d5f34506974b]
+Description=Bitwarden (Helium) Float Krohnkite
+skippager=true
+skippagerrule=2
+title=Bitwarden
+titlematch=1
+wmclass=chrome
+wmclassmatch=2
 
 [eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4]
 Description=Bitwarden Float Krohnkite
