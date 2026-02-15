@@ -1,7 +1,6 @@
 arch = {
 	packages = [
 		"alsa-scarlett-gui",
-		"brave-bin",
 		"breeze-icons",
 		"cheat-bin",
 		"creality-print-bin",
@@ -9,6 +8,7 @@ arch = {
 		"fprintd",
 		"freecad",
 		"handlr-regex",
+		"helium-browser-bin",
 		"helvum",
 		"httpdirfs", # required by ttf-ms-win11-auto
 		"keepassxc",

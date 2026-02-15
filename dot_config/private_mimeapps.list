@@ -87,9 +87,10 @@ video/x-ogm+ogg=mpv.desktop;
 video/x-theora=mpv.desktop;
 video/x-theora+ogg=mpv.desktop;
 x-scheme-handler/geo=org.gnome.Maps.desktop;openstreetmap-geo-handler.desktop;
-x-scheme-handler/http=zen.desktop;
-x-scheme-handler/https=zen.desktop;
+x-scheme-handler/http=helium.desktop;zen.desktop;
+x-scheme-handler/https=helium.desktop;zen.desktop;
 x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
+
 [Default Applications]
 application/*=nvim.desktop;
 application/json=nvim.desktop;
@@ -186,7 +187,7 @@ video/x-ogm+ogg=mpv.desktop;
 video/x-theora=mpv.desktop;
 video/x-theora+ogg=mpv.desktop;
 x-scheme-handler/geo=org.gnome.Maps.desktop;
-x-scheme-handler/http=zen.desktop;
-x-scheme-handler/https=zen.desktop;
+x-scheme-handler/http=helium.desktop;
+x-scheme-handler/https=helium.desktop;
 x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
 x-scheme-handler/terminal=Alacritty.desktop;
