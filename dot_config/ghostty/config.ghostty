@@ -1,0 +1,15 @@
+theme = dark:Catppuccin Mocha,light:Catppuccin Frappe
+cursor-style = underline
+
+background-opacity = 0.9
+background-blur = true
+mouse-hide-while-typing = true
+
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = bell,notify
+notify-on-command-finish-after = 30s
+
