@@ -32,7 +32,7 @@ set recolor                     "false"
 set guioptions sh
 
 # synctex
-set synctex-editor-command "code -r -g %{input}:%{line}"
+set synctex-editor-command "zeditor -r %{input}:%{line}"
 
 # copy-pasting
 set selection-clipboard "clipboard"

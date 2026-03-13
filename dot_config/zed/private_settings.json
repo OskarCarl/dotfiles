@@ -116,7 +116,7 @@
 			"formatter": "language_server",
 		},
 		"Kotlin": {
-			"language_servers": ["kotlin-language-server"]
+			"language_servers": ["kotlin-language-server"],
 		},
 	},
 	"file_types": {
@@ -166,11 +166,20 @@
 						"forwardSearchAfter": true,
 					},
 					"forwardSearch": {
-						"executable": "okular",
-						"args": ["--unique", "%p#src:%l%f"],
+						"executable": "zathura",
+						"args": [
+							"--synctex-forward",
+							"%l:1:%f",
+							"-x",
+							"zeditor %%{input}:%%{line}",
+							"%p",
+						],
 					},
 					"diagnostics": {
-						"ignoredPatterns": ["(Over|Under)full \\\\hbox.*"],
+						"ignoredPatterns": [
+							"(Over|Under)full \\\\hbox.*",
+							"Package titlesec Warning.*",
+						],
 					},
 				},
 			},
