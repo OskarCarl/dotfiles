@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Darkman daemon
+Keywords=dark;light;colour-preference;theme;
+TryExec=darkman
+Exec=darkman run
+#Icon=darkman
+Terminal=false
+Type=Application
+Categories=Settings;
