@@ -31,6 +31,7 @@ arch = {
 		"kwin-effect-rounded-corners",
 		"kwin-effects-better-blur-dx",
 		"okular",
+		"plasma-login-manager",
 		"skanpage",
 		"spectacle",
 		"svgpart",

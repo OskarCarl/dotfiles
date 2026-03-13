@@ -37,8 +37,8 @@ wmclass=org.kde.francis
 wmclassmatch=1
 
 [General]
-count=9
-rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4,dc591e0b-5611-41ba-97d7-d5f34506974b,667d94f3-c9f3-449c-841f-62f6778455f7,150f037d-e5ba-4226-a77f-7de498607c94
+count=10
+rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,bf1e1b62-609c-4e07-bbd9-72c0e55c221b,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4,dc591e0b-5611-41ba-97d7-d5f34506974b,667d94f3-c9f3-449c-841f-62f6778455f7,150f037d-e5ba-4226-a77f-7de498607c94
 
 [bb002edd-8472-4a66-a7ed-4f0eb94b4765]
 Description=Application settings for pritunl
@@ -50,6 +50,15 @@ types=1
 wmclass=pritunl
 wmclasscomplete=true
 wmclassmatch=2
+
+[bf1e1b62-609c-4e07-bbd9-72c0e55c221b]
+Description=Emoji Picker
+desktops=\\0
+desktopsrule=3
+noborder=true
+noborderrule=3
+wmclass=org.kde.plasma.emojier
+wmclassmatch=1
 
 [c268356a-cd7a-490e-8240-1402cf485035]
 Description=Ignore all minsize
