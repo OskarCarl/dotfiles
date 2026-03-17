@@ -19,7 +19,7 @@ org.kde.datetimeEnabled=false
 org.kde.zanshinEnabled=false
 
 [Plugins][Favorites]
-plugins=krunner_services,krunner_powerdevil
+plugins=krunner_services,krunner_powerdevil,Bitwarden Rbw KRunner
 
 [Runners][krunner_charrunner]
 aliases=deg,longarrow,arrow,ao
