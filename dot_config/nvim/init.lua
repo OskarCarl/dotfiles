@@ -17,10 +17,6 @@ vim.opt.termguicolors = true
 vim.opt.guicursor = "i:hor10"
 vim.g.gruvbox_italic = true
 vim.o.background = "dark"
-vim.cmd [[
-colorscheme catppuccin
-hi Normal guibg=NONE ctermbg=NONE
-]]
 
 require("catppuccin").setup({
 	flavour = "macchiato",
@@ -40,6 +36,12 @@ require("catppuccin").setup({
 		},
 	}
 })
+
+vim.cmd [[
+colorscheme catppuccin
+hi Normal guibg=NONE ctermbg=NONE
+]]
+
 
 -- Keybindings
 -- Switch between different windows by their direction

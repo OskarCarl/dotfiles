@@ -10,7 +10,6 @@ arch = {
 flatpak = {
 	packages = [
 		"system:com.valvesoftware.Steam",
-		"system:org.freedesktop.Platform.VulkanLayer.gamescope",
 	]
 }
 
