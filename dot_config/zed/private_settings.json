@@ -8,6 +8,16 @@
 // from the command palette or from `Zed` application menu.
 {
 	"agent_servers": {
+		"OpenCode": {
+			"favorite_config_option_values": {
+    "model": [
+     "github-copilot/gpt-5.3-codex"
+    ]
+   },
+   "type": "custom",
+			"command": "opencode",
+			"args": ["acp"],
+		},
 		"github-copilot": {
 			"type": "registry",
 		},
@@ -38,9 +48,6 @@
 	"collaboration_panel": {
 		"button": false,
 	},
-	"notification_panel": {
-		"button": false,
-	},
 	"agent": {
 		"default_profile": "write",
 		"inline_assistant_model": {
@@ -48,8 +55,9 @@
 			"model": "claude-sonnet-4",
 		},
 		"default_model": {
+			"effort": "high",
 			"provider": "copilot_chat",
-			"model": "gpt-5.2-codex",
+			"model": "gpt-5.3-codex",
 		},
 		"enabled": true,
 		"button": true,
@@ -116,6 +124,7 @@
 			"formatter": "language_server",
 		},
 		"Kotlin": {
+			"format_on_save": "off",
 			"language_servers": ["kotlin-language-server"],
 		},
 	},
