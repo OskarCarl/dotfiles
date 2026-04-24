@@ -50,6 +50,7 @@ arch = {
 		"nmap",
 		"oath-toolkit",
 		"opencl-mesa",
+		"opencode",
 		"pyright",
 		"python-docker",
 		"python-ipykernel",
