@@ -14,4 +14,6 @@ notify-on-command-finish-action = bell,notify
 notify-on-command-finish-after = 30s
 
 shell-integration-features = ssh-env
+working-directory = home
+window-inherit-working-directory = false
 

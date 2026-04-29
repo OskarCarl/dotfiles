@@ -13,7 +13,6 @@ set scrolloff 10
 
 set incsearch
 
-# AUR package seems to be insufficiently isolated during build
 set previewer /usr/bin/pistol
 
 
@@ -38,7 +37,7 @@ map i $/usr/bin/pistol $f | nvimpager
 
 # dedicated keys for file opener actions
 map o $[[ ! -d $f ]] && kde-open $f || exit 0
-map O &alacritty -e /usr/bin/lf $f
+map O &ghostty -e /usr/bin/lf $f
 
 cmd open-with &"$@" $fx
 map ` push :open-with<space>
@@ -59,6 +58,7 @@ map cd push :cd<space>
 
 map gr cd /
 map gm cd /media/
+map gh $lf -remote "send $id cd $HOME"
 
 
 ############################################################################

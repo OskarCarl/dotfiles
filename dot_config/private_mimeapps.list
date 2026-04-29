@@ -190,4 +190,5 @@ x-scheme-handler/geo=org.gnome.Maps.desktop;
 x-scheme-handler/http=helium.desktop;
 x-scheme-handler/https=helium.desktop;
 x-scheme-handler/mailto=org.mozilla.Thunderbird.desktop;
-x-scheme-handler/terminal=Alacritty.desktop;
+x-scheme-handler/terminal=com.mitchellh.ghostty.desktop;
+text/x-log=nvim.desktop;
