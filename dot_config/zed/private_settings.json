@@ -10,11 +10,9 @@
 	"agent_servers": {
 		"OpenCode": {
 			"favorite_config_option_values": {
-    "model": [
-     "github-copilot/gpt-5.3-codex"
-    ]
-   },
-   "type": "custom",
+				"model": ["github-copilot/gpt-5.3-codex"],
+			},
+			"type": "custom",
 			"command": "opencode",
 			"args": ["acp"],
 		},
@@ -73,7 +71,7 @@
 		"default_model": {
 			"effort": "high",
 			"provider": "copilot_chat",
-			"model": "gpt-5.3-codex",
+			"model": "gpt-5.2-codex",
 		},
 		"enabled": true,
 		"button": true,
@@ -167,6 +165,11 @@
 	},
 	"lsp": {
 		"harper-ls": {
+			"settings": {
+				"harper-ls": {
+					"dialect": "British",
+				},
+			},
 			"binary": {
 				"path": "/usr/bin/harper-ls",
 				"arguments": ["--stdio"],
