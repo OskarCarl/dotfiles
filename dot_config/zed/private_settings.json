@@ -40,10 +40,26 @@
 	"buffer_font_family": "JetBrainsMono Nerd Font",
 	"theme": {
 		"mode": "system",
-		"light": "Catppuccin Frappé (Blur)",
-		"dark": "Catppuccin Mocha (Blur)",
+		"light": "Kanagawa Wave",
+		"dark": "Kanagawa Dragon",
 	},
-	"icon_theme": "Catppuccin Mocha",
+	"icon_theme": "Colored Zed Icons Theme Dark",
+	"theme_overrides": {
+		"Kanagawa Wave": {
+			"background.appearance": "blurred",
+			"background": "#1F1F2800",
+			"status_bar.background": "#18182055",
+			"title_bar.background": "#18182055",
+			"title_bar.inactive_background": "#18182022",
+		},
+		"Kanagawa Dragon": {
+			"background.appearance": "blurred",
+			"background": "#18161655",
+			"status_bar.background": "#12120f55",
+			"title_bar.background": "#12120f55",
+			"title_bar.inactive_background": "#12120f22",
+		},
+	},
 	"show_whitespaces": "boundary",
 	"collaboration_panel": {
 		"button": false,
@@ -77,8 +93,8 @@
 		},
 	},
 	"auto_install_extensions": {
-		"catppuccin-blur": true,
-		"catppuccin-icons": true,
+		"kanagawa-themes": true,
+		"colored-zed-icons-theme": true,
 		"codebook": true,
 		"docker-compose": true,
 		"dockerfile": true,

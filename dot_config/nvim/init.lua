@@ -18,29 +18,15 @@ vim.opt.guicursor = "i:hor10"
 vim.g.gruvbox_italic = true
 vim.o.background = "dark"
 
-require("catppuccin").setup({
-	flavour = "macchiato",
-	transparent_backgroud = true,
-	dim_inactive = {
-		enabled = false
-	},
-	integrations = {
-		cmp = true,
-		gitsigns = true,
-		nvimtree = true,
-		treesitter = true,
-		notify = false,
-		mini = {
-			enabled = true,
-			indentscope_color = "",
-		},
-	}
+require('kanagawa').setup({
+    transparent = true,          -- do not set background color
+    overrides = function(colors) -- add/modify highlights
+        return {}
+    end,
+    theme = "wave",
 })
 
-vim.cmd [[
-colorscheme catppuccin
-hi Normal guibg=NONE ctermbg=NONE
-]]
+vim.cmd("colorscheme kanagawa")
 
 
 -- Keybindings
@@ -52,7 +38,7 @@ vim.keymap.set({ 'n', 'o', 'v' }, '<C-h>', "<C-w>h", { remap = true })
 
 -- Lualine
 require('lualine').setup({
-	options = { theme = "catppuccin" },
+	options = { theme = "auto" },
 })
 vim.o.showmode = false
 

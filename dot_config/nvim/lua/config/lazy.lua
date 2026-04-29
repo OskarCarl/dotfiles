@@ -25,7 +25,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		-- import your plugins
-		{ "catppuccin/nvim",           name = "catppuccin",                             priority = 1000 },
+		{ "rebelot/kanagawa.nvim" },
 		{ "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
 		{ "nvim-tree/nvim-tree.lua",   dpendencies = { "nvim-tree/nvim-dev-webicons" } },
 	},
