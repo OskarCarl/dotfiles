@@ -1,0 +1,10 @@
+#!/usr/bin/sh
+
+printf "## Upgrading Neovim\n\n"
+nvim --headless "+Lazy! sync" +qa
+printf "\n\n"
+
+printf "## Upgrading Fish plugins\n\n"
+fish -c 'fisher update'
+printf "\n\n"
+
