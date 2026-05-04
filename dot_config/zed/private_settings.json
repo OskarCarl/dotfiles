@@ -38,8 +38,8 @@
 	"buffer_font_family": "JetBrainsMono Nerd Font",
 	"theme": {
 		"mode": "system",
-		"light": "Kanagawa Wave",
-		"dark": "Kanagawa Dragon",
+		"light": "Kanagawa",
+		"dark": "Kanagawa Wave",
 	},
 	"icon_theme": "Colored Zed Icons Theme Dark",
 	"theme_overrides": {
@@ -50,12 +50,12 @@
 			"title_bar.background": "#18182055",
 			"title_bar.inactive_background": "#18182022",
 		},
-		"Kanagawa Dragon": {
+		"Kanagawa": {
 			"background.appearance": "blurred",
-			"background": "#18161655",
-			"status_bar.background": "#12120f55",
-			"title_bar.background": "#12120f55",
-			"title_bar.inactive_background": "#12120f22",
+			"background": "#1F1F2855",
+			"status_bar.background": "#18182055",
+			"title_bar.background": "#18182055",
+			"title_bar.inactive_background": "#18182022",
 		},
 	},
 	"show_whitespaces": "boundary",
@@ -188,7 +188,6 @@
 							"--untrusted",
 							"--synctex",
 							"--keep-logs",
-							"--keep-intermediates",
 						],
 						"onSave": true,
 						"forwardSearchAfter": true,
