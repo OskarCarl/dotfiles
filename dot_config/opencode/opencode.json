@@ -1,4 +1,13 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "plugin": ["@mohak34/opencode-notifier@latest"]
+	"$schema": "https://opencode.ai/config.json",
+		"permission": {
+			"*": "ask",
+			"read": "allow",
+			"edit": "allow",
+			"bash": {
+				"git *": "allow",
+				"git push*": "deny"
+		}
+	},
+	"plugin": ["@mohak34/opencode-notifier@latest"]
 }
