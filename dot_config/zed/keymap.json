@@ -10,8 +10,16 @@
 		"context": "Workspace",
 		"bindings": {
 			"shift shift": "file_finder::Toggle",
-			"ctrl-shift-g": ["task::Spawn", { "task_name": "lazygit" }]
-		}
+			"ctrl-shift-g": "git_panel::Toggle",
+			"ctrl-alt-g": ["task::Spawn", { "task_name": "lazygit" }],
+			"ctrl-shift-e": "project_panel::Toggle",
+			"ctrl-shift-b": "outline_panel::Toggle",
+			"ctrl-shift-d": "debug_panel::Toggle",
+			"ctrl-shift-t": "terminal_panel::Toggle",
+			"ctrl-shift-a": "agent::ToggleFocus",
+			"ctrl-?": "agent::Toggle",
+			"ctrl-shift-z": "workspace::ToggleZoom",
+		},
 	},
 	{
 		"context": "!Terminal",
@@ -19,13 +27,12 @@
 			"ctrl-shift-c": "editor::Copy",
 			"ctrl-shift-v": "editor::Paste",
 			"ctrl-shift-x": "editor::Cut",
-			"ctrl-shift-z": "workspace::ToggleZoom"
-		}
+		},
 	},
 	{
 		"context": "Terminal",
 		"bindings": {
-			"ctrl-`": "workspace::ToggleBottomDock"
-		}
-	}
+			"ctrl-`": "workspace::ToggleBottomDock",
+		},
+	},
 ]
