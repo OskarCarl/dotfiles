@@ -37,6 +37,7 @@ wmclassmatch=1
 
 [9314b2fe-454c-4b4e-998c-13135b08d7e9]
 Description=helium
+Enabled=false
 noborder=true
 noborderrule=3
 types=1
