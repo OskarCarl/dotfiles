@@ -8,3 +8,6 @@ printf "## Upgrading Fish plugins\n\n"
 fish -c 'fisher update'
 printf "\n\n"
 
+printf "## Upgrading Rust\n\n"
+rustup update
+printf "\n\n"
