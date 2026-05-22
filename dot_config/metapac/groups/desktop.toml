@@ -3,6 +3,7 @@ arch = {
 		"alsa-scarlett-gui",
 		"breeze-icons",
 		"cheat-bin",
+		"chromium-widevine",
 		"creality-print-bin",
 		"drawio-desktop",
 		"fprintd",
