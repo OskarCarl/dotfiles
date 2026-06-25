@@ -1,3 +1,6 @@
+[AC][Keyboard]
+KeyboardBrightness=0
+
 [AC][Performance]
 PowerProfile=balanced
 
@@ -6,13 +9,18 @@ LidAction=0
 PowerButtonAction=1
 SleepMode=3
 
+[Battery][Keyboard]
+KeyboardBrightness=0
+
 [Battery][Performance]
 PowerProfile=balanced
 
 [Battery][SuspendAndShutdown]
-LidAction=0
 PowerButtonAction=1
 SleepMode=3
+
+[LowBattery][Keyboard]
+KeyboardBrightness=0
 
 [LowBattery][Performance]
 PowerProfile=power-saver
