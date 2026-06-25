@@ -17,3 +17,7 @@ shell-integration-features = ssh-env
 working-directory = home
 window-inherit-working-directory = false
 
+keybind = all:ctrl+shift+o=unbind
+keybind = all:ctrl+shift+p=unbind
+keybind = all:ctrl+tab=unbind
+keybind = all:ctrl+shift+tab=unbind

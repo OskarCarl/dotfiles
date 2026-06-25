@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Name=Obsidian TUI
+Comment=Launches Nvim.Obsidian
+Icon=obsidian
+Terminal=true
+StartupWMClass=nvim-obsidian
+Exec=nvim -c 'Obsidian '
+Categories=ConsoleOnly;Office;
+MimeType=inode/directory;
+Actions=daily-note;new-note;
+
+[Desktop Action daily-note]
+Name=Open Daily Note
+Terminal=true
+Exec=nvim -c 'Obsidian today'
+
+[Desktop Action new-note]
+Name=New Note
+Terminal=true
+Exec=nvim -c 'Obsidian new'
