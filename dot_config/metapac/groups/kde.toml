@@ -29,12 +29,13 @@ arch = {
 		"kwalletmanager",
 		"kweather",
 		"kwin-effect-rounded-corners-git",
-		"kwin-effects-better-blur-dx",
+		"kwin-effects-better-blur-dx-git",
+		"kwin-effects-geometry-change",
 		"okular",
 		"plasma-login-manager",
 		"skanpage",
 		"spectacle",
 		"svgpart",
+		"union",
 	]
 }
-
