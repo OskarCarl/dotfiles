@@ -7,6 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+	"window_decorations": "client",
+	"use_system_window_tabs": false,
+	"title_bar": {
+		"show_menus": false,
+		"button_layout": "platform_default",
+	},
 	"diff_view_style": "split",
 	"relative_line_numbers": "enabled",
 	"agent_servers": {
