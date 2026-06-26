@@ -53,6 +53,7 @@ arch = {
 		"oath-toolkit",
 		"opencl-mesa",
 		"opencode",
+		"prettier",
 		"pyright",
 		"python-docker",
 		"python-ipykernel",
