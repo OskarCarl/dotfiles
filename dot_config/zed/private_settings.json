@@ -7,6 +7,10 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+	"semantic_tokens": "combined",
+	"vim": {
+		"toggle_relative_line_numbers": true,
+	},
 	"window_decorations": "client",
 	"use_system_window_tabs": false,
 	"title_bar": {
@@ -111,6 +115,9 @@
 		"make": true,
 	},
 	"languages": {
+		"LaTeX": {
+			"document_folding_ranges": "on",
+		},
 		"Python": {
 			"hard_tabs": false,
 			"tab_size": 4,
