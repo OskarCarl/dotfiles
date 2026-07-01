@@ -93,11 +93,6 @@ x-scheme-handler/mailto=userapp-Thunderbird-U3FVP3.desktop;org.mozilla.Thunderbi
 x-scheme-handler/mid=userapp-Thunderbird-U3FVP3.desktop;
 x-scheme-handler/webcal=userapp-Thunderbird-AO4WP3.desktop;
 x-scheme-handler/webcals=userapp-Thunderbird-AO4WP3.desktop;
-x-scheme-handler/cider=cider.desktop
-x-scheme-handler/itms=cider.desktop
-x-scheme-handler/itmss=cider.desktop
-x-scheme-handler/music=cider.desktop
-x-scheme-handler/itunes=cider.desktop
 
 [Default Applications]
 application/*=nvim.desktop;

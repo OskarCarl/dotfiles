@@ -13,10 +13,12 @@ wmclassmatch=3
 
 [5737318a-21cd-4623-b6c3-f061dc0dd958]
 Description=Cider
-desktopsrule=3
+desktops=\\0
+desktopsrule=2
 noborder=true
 noborderrule=3
-wmclass=Cider
+wmclass=Cider cider
+wmclasscomplete=true
 wmclassmatch=1
 
 [667d94f3-c9f3-449c-841f-62f6778455f7]
