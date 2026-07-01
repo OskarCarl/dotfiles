@@ -68,3 +68,6 @@ vim.opt.foldenable = false -- Unfolded by default
 vim.o.showmode = false
 
 require('markdowny').setup()
+
+require('config.harper')
+
