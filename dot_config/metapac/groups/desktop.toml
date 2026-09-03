@@ -14,6 +14,7 @@ arch = {
 		"httpdirfs", # required by ttf-ms-win11-auto
 		"keepassxc",
 		"lf",
+		"mission-center",
 		"mpv",
 		"neovim",
 		"nextcloud-client",
@@ -58,13 +59,10 @@ flatpak = {
 	packages = [
 		"system:com.github.jeromerobert.pdfarranger",
 		"system:de.bund.ausweisapp.ausweisapp2",
-		"system:io.missioncenter.MissionCenter",
-		"system:org.apache.directory.studio",
 		"system:org.fkoehler.KTailctl",
 		"system:org.gnome.Maps",
 		"system:org.kde.CrowTranslate",
 		"system:org.onlyoffice.desktopeditors",
-		"system:org.raspberrypi.rpi-imager",
 		"system:org.signal.Signal",
 	]
 }

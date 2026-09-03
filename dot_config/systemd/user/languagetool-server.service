@@ -1,0 +1,9 @@
+[Unit]
+Description=LanguageTool Server
+
+[Service]
+ExecStart=/usr/bin/languagetool --http -p 28082 --config /home/oskar/.config/LanguageTool/config.properties
+# Wait for the HTTP server to be available
+ExecStartPost=/usr/bin/sleep 3
+PrivateTmp=yes
+

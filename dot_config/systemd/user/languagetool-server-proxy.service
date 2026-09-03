@@ -1,0 +1,9 @@
+[Unit]
+Description=LanguageTool Server Proxy
+Requires=languagetool-server.service
+After=languagetool-server.service
+JoinsNamespaceOf=languagetool-server.service
+
+[Service]
+ExecStart=/lib/systemd/systemd-socket-proxyd 127.0.0.1:28082
+PrivateTmp=yes

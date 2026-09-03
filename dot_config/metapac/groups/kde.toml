@@ -13,6 +13,7 @@ arch = {
 		"kclock",
 		"kcolorchooser",
 		"kde-accessibility-meta",
+		"kde-pim-meta", "mariadb",
 		"kde-system-meta",
 		"kdegraphics-thumbnailers",
 		"kdenlive",

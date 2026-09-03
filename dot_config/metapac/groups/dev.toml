@@ -31,6 +31,7 @@ arch = {
 		"gitlab-ci-local",
 		"go",
 		"goreleaser",
+		"helm",
 		"highlight",
 		"iperf3",
 		"ipython",
@@ -41,6 +42,7 @@ arch = {
 		"lazydocker-bin",
 		"lazygit",
 		"libtool",
+		"llama-cpp", "ggml-blas", "ggml-vulkan",
 		"lldb",
 		"llvm",
 		"m4",
@@ -51,8 +53,10 @@ arch = {
 		"nasm",
 		"nmap",
 		"oath-toolkit",
+		"okd-client-bin",
 		"opencl-mesa",
 		"opencode",
+		"pnpm",
 		"prettier",
 		"pyright",
 		"python-docker",
@@ -83,8 +87,10 @@ arch = {
 
 flatpak = {
 	packages = [
-		"system:io.github.Omniaevo.mqtt5-explorer",
+		"system:com.usebruno.Bruno",
 		"system:es.danirod.Cartero",
+		"system:io.github.Omniaevo.mqtt5-explorer",
+		"system:io.github.db_mobile.resonance",
 	]
 }
 

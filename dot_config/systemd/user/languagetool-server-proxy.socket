@@ -1,0 +1,8 @@
+[Unit]
+Description=LanguageTool Singleton Socket
+
+[Socket]
+ListenStream=28081
+
+[Install]
+WantedBy=sockets.target

@@ -9,6 +9,7 @@ require("config.lazy")
 require("config.tree")
 require("config.mini")
 require("config.obsidian")
+require("config.fastaction")
 
 vim.o.mouse = a
 vim.o.swapfile = false
@@ -69,5 +70,5 @@ vim.o.showmode = false
 
 require('markdowny').setup()
 
-require('config.harper')
+-- require('config.harper')
 
