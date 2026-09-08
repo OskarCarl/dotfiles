@@ -70,8 +70,6 @@ arch = {
 		"libmicrohttpd",
 		"libopenraw",
 		"linux-firmware",
-		"linux-lts",
-		"linux-lts-headers",
 		"linux-zen",
 		"linux-zen-headers",
 		"logrotate",
