@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Helium Browser (Toolbox)
+Exec=helium-browser --profile-directory="Profile 1" %U
+StartupNotify=true
+Terminal=false
+Icon=helium-browser
+Type=Application
+Categories=Network;WebBrowser;
+

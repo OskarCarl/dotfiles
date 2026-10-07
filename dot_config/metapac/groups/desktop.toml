@@ -43,7 +43,6 @@ arch = {
 		"ttf-jetbrains-mono-nerd",
 		"ttf-ms-win11-auto",
 		"ttf-roboto",
-		"wavebox",
 		"wl-clipboard",
 		"xdg-desktop-portal",
 		"xorg-server",
