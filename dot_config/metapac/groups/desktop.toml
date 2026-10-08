@@ -11,8 +11,8 @@ arch = {
 		"handlr-regex",
 		"helium-browser-bin",
 		"helvum",
-		"httpdirfs", # required by ttf-ms-win11-auto
 		"keepassxc",
+		"libappindicator",
 		"lf",
 		"mission-center",
 		"mpv",
@@ -41,7 +41,7 @@ arch = {
 		"ttf-hack-nerd",
 		"ttf-heuristica",
 		"ttf-jetbrains-mono-nerd",
-		"ttf-ms-win11-auto",
+		"ttf-ms-win11-auto", "httpdirfs", #required
 		"ttf-roboto",
 		"wl-clipboard",
 		"xdg-desktop-portal",
