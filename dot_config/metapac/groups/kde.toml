@@ -23,6 +23,7 @@ arch = {
 		"kio-gdrive",
 		"kio-zeroconf",
 		"koko",
+		"krema",
 		"kruler",
 		"kteatime",
 		"ktimer",
