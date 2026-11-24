@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Name=Tailscale Tray
+Comment=Tailscale Systray service
+Icon=tailscale
+Terminal=false
+Exec=tailscale_systray_daemon
+Categories=Network;
+Actions=connect;disconnect;
+
+[Desktop Action connect]
+Name=Tailscale: Connect
+Terminal=false
+Exec=tailscale up
+
+[Desktop Action disconnect]
+Name=Tailscale: Disconnect
+Terminal=false
+Exec=tailscale down
+

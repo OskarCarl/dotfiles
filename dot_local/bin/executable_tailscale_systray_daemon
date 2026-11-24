@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# Starts a systray daemon with the matching dark/light switch and restarts it
+# whenever the org.freedesktop.appearance color-scheme preference changes.
+# Reads and subscribes via the xdg-desktop-portal Settings interface on the
+# session bus. Does not start a duplicate if the daemon is already running.
+
+set -u
+
+# Command template: every {MODE} is replaced with $DARK or $LIGHT.
+CMD=(tailscale systray --theme {MODE})
+DARK="dark:nobg"
+LIGHT="light:nobg"
+
+# pgrep -f pattern identifying the daemon; must not include the mode switch.
+PATTERN='tailscale systray'
+
+# color-scheme: 1 = prefer-dark, 2 = prefer-light, 0/other = no preference.
+scheme_to_mode() {
+    case $1 in
+        1) printf '%s' "$DARK" ;;
+        *) printf '%s' "$LIGHT" ;;
+    esac
+}
+
+current_scheme() {
+    local out
+    out=$(gdbus call --session \
+        --dest org.freedesktop.portal.Desktop \
+        --object-path /org/freedesktop/portal/desktop \
+        --method org.freedesktop.portal.Settings.ReadOne \
+        org.freedesktop.appearance color-scheme 2>/dev/null)
+    out=${out#*uint32 }
+    printf '%s' "${out%%,*}"
+}
+
+running() { pgrep -f "$PATTERN" | grep -vx "$$"; }
+
+stop() {
+    local pids
+    pids=$(running)
+    [[ -n $pids ]] || return 0
+    kill $pids 2>/dev/null
+    local i=0
+    while kill -0 $pids 2>/dev/null && (( i++ < 25 )); do sleep 0.2; done
+    kill -KILL $pids 2>/dev/null
+}
+
+start() {
+    local mode=$1 arg cmd=()
+    for arg in "${CMD[@]}"; do cmd+=("${arg//\{MODE\}/$mode}"); done
+    nohup "${cmd[@]}" >/dev/null 2>&1 &
+    disown
+}
+
+cur=$(current_scheme)
+[[ -n $(running) ]] || start "$(scheme_to_mode "$cur")"
+
+dbus-monitor --session \
+    "type='signal',sender='org.freedesktop.portal.Desktop',interface='org.freedesktop.portal.Settings',member='SettingChanged',arg0='org.freedesktop.appearance',arg1='color-scheme'" |
+    while read -r line; do
+        [[ $line == *uint32* ]] || continue
+        new=${line##*uint32 }
+        new=${new%% *}
+        [[ $new == "$cur" ]] && continue
+        cur=$new
+        stop
+        start "$(scheme_to_mode "$cur")"
+    done

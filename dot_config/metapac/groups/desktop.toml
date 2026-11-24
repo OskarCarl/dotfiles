@@ -58,7 +58,6 @@ flatpak = {
 	packages = [
 		"system:com.github.jeromerobert.pdfarranger",
 		"system:de.bund.ausweisapp.ausweisapp2",
-		"system:org.fkoehler.KTailctl",
 		"system:org.gnome.Maps",
 		"system:org.kde.CrowTranslate",
 		"system:org.onlyoffice.desktopeditors",
