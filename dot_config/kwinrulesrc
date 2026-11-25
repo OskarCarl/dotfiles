@@ -13,10 +13,10 @@ wmclassmatch=3
 
 [5737318a-21cd-4623-b6c3-f061dc0dd958]
 Description=Cider
+decorationpolicy=none
+decorationpolicyrule=3
 desktops=\\0
 desktopsrule=2
-noborder=true
-noborderrule=3
 wmclass=Cider cider
 wmclasscomplete=true
 wmclassmatch=1
@@ -40,15 +40,14 @@ wmclassmatch=1
 [9314b2fe-454c-4b4e-998c-13135b08d7e9]
 Description=helium
 Enabled=false
-noborder=true
-noborderrule=3
+decorationpolicy=none
+decorationpolicyrule=3
 types=1
 wmclass=helium
 wmclassmatch=1
 
 [General]
-count=12
-rules=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,bf1e1b62-609c-4e07-bbd9-72c0e55c221b,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4,dc591e0b-5611-41ba-97d7-d5f34506974b,667d94f3-c9f3-449c-841f-62f6778455f7,150f037d-e5ba-4226-a77f-7de498607c94,bedad6b4-5acf-4d7c-bf66-36fd73b4f5de,9314b2fe-454c-4b4e-998c-13135b08d7e9
+Order=c268356a-cd7a-490e-8240-1402cf485035,bb002edd-8472-4a66-a7ed-4f0eb94b4765,ca98e5e6-69f8-4261-b3cb-c395070dab50,5737318a-21cd-4623-b6c3-f061dc0dd958,bf1e1b62-609c-4e07-bbd9-72c0e55c221b,81542e8d-e579-475d-baa0-76ff9278e171,eefba5e2-8ba4-4e08-88a5-db5ac7eaf8d4,dc591e0b-5611-41ba-97d7-d5f34506974b,667d94f3-c9f3-449c-841f-62f6778455f7,150f037d-e5ba-4226-a77f-7de498607c94,bedad6b4-5acf-4d7c-bf66-36fd73b4f5de,9314b2fe-454c-4b4e-998c-13135b08d7e9
 
 [bb002edd-8472-4a66-a7ed-4f0eb94b4765]
 Description=Application settings for pritunl
@@ -67,10 +66,10 @@ wmclassmatch=1
 
 [bf1e1b62-609c-4e07-bbd9-72c0e55c221b]
 Description=Emoji Picker
+decorationpolicy=none
+decorationpolicyrule=3
 desktops=\\0
 desktopsrule=3
-noborder=true
-noborderrule=3
 wmclass=org.kde.plasma.emojier
 wmclassmatch=1
 
@@ -81,8 +80,8 @@ types=1
 
 [ca98e5e6-69f8-4261-b3cb-c395070dab50]
 Description=Zotero BetterBibTeX Picker
-noborder=true
-noborderrule=2
+decorationpolicy=none
+decorationpolicyrule=2
 title=Quick Format Citation
 wmclass=Zotero
 wmclassmatch=1
