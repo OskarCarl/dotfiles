@@ -31,13 +31,13 @@ map y
 
 map S $fish
 map <enter> shell
-map <backspace2> set hidden!
+map <backspace> set hidden!
 
 map i $/usr/bin/pistol $f | nvimpager
 
 # dedicated keys for file opener actions
 map o $[[ ! -d $f ]] && kde-open $f || exit 0
-map O &ghostty -e /usr/bin/lf $f
+map O $mimeopen --ask $f
 
 cmd open-with &"$@" $fx
 map ` push :open-with<space>
@@ -57,9 +57,9 @@ map K half-up
 map cd push :cd<space>
 
 map gr cd /
-map gm cd /media/
+map gm $lf -remote "send $id cd /run/media/$(id -un)/"
 map gh $lf -remote "send $id cd $HOME"
-
+map gt cd /tmp/
 
 ############################################################################
 # File operations
@@ -79,24 +79,17 @@ map cc clear
 cmd copy-path &printf '%s' "$fx" | wl-copy
 cmd copy-clipboard &wl-copy -t "$(mimetype -b -L $f)" <$f
 
-# define a custom 'rename' command without prompt for overwrite
-cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-map r push :rename<space>
-
-map a ${{
-	# get 'basename' of the selection
-	filename="${f##*/}"
-	# quote it so we won't deal with quotes in the lf -remote command
-	filename="$(printf '%q' "$filename")"
-	filename="${filename// /<space>}"
-	lf -remote "send $id push :rename<space>$filename"
-}}
-
-# use '<delete>' key for either 'trash' or 'delete' command
-# map <delete> trash
 map D
-map dD delete
-map <delete> delete
+map dD trash
+map dR delete
+map <delete> trash
+
+cmd trash %{{
+	n=$(wc -l <<< "$fx")
+	xargs -d '\n' -I{} kioclient move "{}" trash:/ <<< "$fx"
+	lf -remote "send $id echo moved $n items to trash"
+	notify-send -a "lf File Manager" -i "user-trash-full" "Moved $n items to the trash"
+}}
 
 # y (select for copy) and P to paste soft-link
 # d (select for cut) and P to paste hard-link
@@ -110,8 +103,7 @@ cmd link %{{
 	fi
 	case "$mode" in
 		# symbolically copy mode is indicating a soft link
-		copy) 
-			ln -sr -t . -- "$@";;
+		copy) ln -sr -t . -- "$@";;
 		# while a move mode is indicating a hard link
 		move) ln -t . -- "$@";;
 	esac
